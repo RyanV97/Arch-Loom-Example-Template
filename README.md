@@ -17,6 +17,7 @@ You can either download the JDK through IntelliJ or I'd recommend downloading yo
 
 Make sure to reimport your gradle project after changing this
 Open the Gradle tab on the right, and click the refresh button
+
 ![](https://i.imgur.com/fgsruAb.png)
 
 ## Misc Additions
