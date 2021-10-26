@@ -1,0 +1,31 @@
+# This is an example mods.toml file.
+# Any fields that aren't annotated with #optional are *required*!
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "All rights reserved" # Want to make your mod open source? Check out https://choosealicense.com/!
+
+[[mods]]
+modId = "examplemod"
+# The version number of the mod - unlike in the Forge MDK,
+# we'll use the processResources task in gradle to replace this for us
+version = "${version}"
+displayName = "Example Mod"
+description = '''
+This is a very cool mod that does... things.
+
+...and stuff.
+
+Have I reached 280 characters yet?
+'''
+
+# An (optional) dependency for your mod. Though technically not required,
+# it's always helpful to add these to stop your mod from loading when something is missing
+# rather than erroring out later
+[[dependencies.examplemod]]
+modId = "forge"
+mandatory = true # do you **need** this mod to be able to launch?
+# A version range using interval notation.
+# Brackets mean "inclusive" bounds, while parentheses mean "exclusive".
+versionRange = "[36,)" # This essentially means any forge >= 36
+ordering = "NONE" # Use this if you want your mod to be loaded specifically BEFORE or AFTER another mod
+side = "BOTH" # Specify where this mod is required: can be BOTH, CLIENT or SERVER
