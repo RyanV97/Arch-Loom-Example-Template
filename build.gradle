@@ -6,7 +6,7 @@ plugins {
 // when using loom 0.10.0 with minecraft 1.16,
 // be sure to set this (and other references to Java 16)
 // to Java 8, obviously
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -122,7 +122,7 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
     // when using 1.17, this should be 16
     // when using 1.16, this should be 8
-    options.release = 16
+    options.release = 8
 }
 
 java {
