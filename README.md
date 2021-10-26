@@ -12,3 +12,8 @@ Then you simply need to change the version of Java being used by Gradle to **Jav
 
 You can either download the JDK through IntelliJ or I'd recommend downloading your java versions through AdoptOpenJDK/Adoptium - https://adoptium.net/
 ![](https://i.imgur.com/jDsNL72.png)
+
+
+Make sure to reimport your gradle project after changing this
+Open the Gradle tab on the right, and click the refresh button
+![](https://i.imgur.com/fgsruAb.png)
