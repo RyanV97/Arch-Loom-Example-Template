@@ -23,9 +23,9 @@ loom {
     forge {
         // specify the mixin configs used in this mod
         // this will be added to the jar manifest as well!
-        mixinConfigs = [
-                "examplemod.mixins.json"
-        ]
+        // mixinConfigs = [
+        //         "examplemod.mixins.json"
+        // ]
 
         // missing access transformers?
         // don't worry, you can still use them!
